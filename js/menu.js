@@ -13,7 +13,6 @@ function closeErrorInfo(){
 function submitForm(event) {
 	let obj = {};
 	let formData = new FormData(event.target);
-	console.log(event.target);
 	formData.forEach((value, key) => obj[key] = value);
 	
 	let request = new Request(event.target.action, {
