@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Mercury</title>
+		<link rel="stylesheet" href="css/fontStyle.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+	<div class="container">
+		<div class="logoBlock">
+			<img class="image-xs" src="image/logo/w-mercury-development.png">
+			<img class="image-md" src="image/logo/w-mercury-development@2x.png">
+			<img class="image-lg" src="image/logo/w-mercury-development@3x.png">
+		</div>
+		<div class="loginBlock">
+			<h2 class="heading">Log In</h2>
+			<form id="loginForm" method="post" action="https://us-central1-mercdev-academy.cloudfunctions.net/login">
+				<div class="inputGroup" style="margin-bottom: 32px">
+					<input class="inputs" type="email" name="email" placeholder="E-Mail" required>	
+				</div>
+				<div class="inputGroup">
+					<input class="inputs" type="password" name="password" placeholder = "Password" required>
+				</div>
+				<div id="errorBlock" style="display: none">
+					<p id="error"></p>
+				</div>
+				<div class="buttonBlock">
+					<button type="submit">Login</button>
+				</div>
+			</form> 
+		</div>
+	</div>
+		
+		<script src="js/menu.js"></script>		
+	</body>
+</html>
+
